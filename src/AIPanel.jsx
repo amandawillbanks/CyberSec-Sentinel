@@ -54,7 +54,7 @@ export default function AIPanel({ stats, aiSpeed, onSpeedChange, onReset, lastDe
       {/* ── Logo sidebar ─────────────────────────────────────────── */}
       <div style={styles.logoSidebar}>
         <img
-          src="/CyberSec-Capstone/SentinelCerberus.png"
+          src="/CyberSec-Sentinel/SentinelCerberus.png"
           alt="Sentinel Cerberus"
           style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", filter: "drop-shadow(0 0 14px rgba(136,85,255,0.9))" }}
         />
