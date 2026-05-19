@@ -624,6 +624,30 @@ export default function CapstoneMVP() {
                 ))}
               </div>
 
+              {/* Sentinel Agent */}
+              <div style={styles.sentinelSection}>
+                <div style={styles.sentinelInner}>
+                  <img
+                    src="/CyberSec-Capstone/SentinelCerberus.png"
+                    alt="Sentinel Cerberus"
+                    style={{ height: 64, width: 64, objectFit: "contain", flexShrink: 0, filter: "drop-shadow(0 0 8px rgba(136,85,255,0.75))" }}
+                  />
+                  <div style={{ flex: 1 }}>
+                    <div style={styles.sentinelTitle}>SENTINEL CERBERUS — AI MODE</div>
+                    <div style={styles.sentinelDesc}>
+                      Activate the AI agent to let Sentinel Cerberus play on your behalf using reinforcement learning.
+                      It uses a Q-learning algorithm — starting out random, then refining its strategy episode by episode.
+                      Watch it improve its win rate and decision-making over dozens of runs without any manual input.
+                    </div>
+                    <div style={styles.sentinelHow}>
+                      <span style={styles.sentinelHowLabel}>HOW TO ENABLE</span>
+                      Click the <span style={{ color: "#bb99ff", fontWeight: 700 }}>SENTINEL</span> button in the top header to toggle AI mode on or off at any time.
+                      When active, a live dashboard appears showing win rate, exploration rate, score trend, and a full episode run log.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Win/Lose conditions */}
               <div style={styles.introConditions}>
                 <div style={styles.introConditionWin}>
@@ -1174,6 +1198,53 @@ const styles = {
     border: "1px solid rgba(255,0,60,0.2)",
     borderLeft: "3px solid rgba(255,0,60,0.6)",
     background: "rgba(255,0,60,0.04)",
+  },
+
+  // ── Sentinel section (intro modal) ────────────────────────────────────────
+  sentinelSection: {
+    padding: "12px 16px",
+    border: "1px solid rgba(136,85,255,0.3)",
+    borderLeft: "3px solid rgba(136,85,255,0.7)",
+    background: "rgba(136,85,255,0.05)",
+    boxShadow: "0 0 18px rgba(136,85,255,0.07)",
+  },
+  sentinelInner: {
+    display: "flex",
+    gap: 16,
+    alignItems: "flex-start",
+  },
+  sentinelTitle: {
+    fontSize: 11,
+    fontWeight: 700,
+    color: "#bb99ff",
+    textTransform: "uppercase",
+    letterSpacing: "0.16em",
+    marginBottom: 6,
+    textShadow: "0 0 10px rgba(136,85,255,0.55)",
+  },
+  sentinelDesc: {
+    fontSize: 11,
+    color: "rgba(200,185,230,0.8)",
+    lineHeight: 1.65,
+    marginBottom: 8,
+  },
+  sentinelHow: {
+    fontSize: 11,
+    color: "rgba(187,153,255,0.7)",
+    lineHeight: 1.55,
+    padding: "7px 10px",
+    background: "rgba(136,85,255,0.07)",
+    border: "1px solid rgba(136,85,255,0.18)",
+    borderLeft: "2px solid rgba(136,85,255,0.45)",
+  },
+  sentinelHowLabel: {
+    fontSize: 9,
+    fontWeight: 700,
+    color: "rgba(187,153,255,0.5)",
+    textTransform: "uppercase",
+    letterSpacing: "0.12em",
+    display: "block",
+    marginBottom: 4,
   },
 
   // ── Penalty banner ─────────────────────────────────────────────────────────
